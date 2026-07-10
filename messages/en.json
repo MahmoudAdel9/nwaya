@@ -1,10 +1,10 @@
 {
   "Meta": {
     "siteName": "Nwaya",
-    "homeTitle": "Nwaya — Intentions for Sleep, Work & Training",
-    "homeDescription": "A collection of Islamic intentions for sleep, work, and training, with evidence from the Quran, Sunnah, and the early generations.",
-    "categoryTitle": "{category} Intentions | Nwaya",
-    "categoryDescription": "Islamic intentions for {category}, with evidence from the Quran and Sunnah."
+    "homeTitle": "Nwaya — Turn Everyday Habits into Acts of Worship",
+    "homeDescription": "Nwaya is a collection of righteous intentions for everyday activities—such as sleep, work, and exercise—supported by evidence from the Quran, the Sunnah, the sayings of the early generations, and the scholars of Islam.",
+    "categoryTitle": "{{category}} Intentions | Nwaya",
+    "categoryDescription": "Righteous intentions for {{category}}, supported by evidence from the Quran, the Sunnah, the sayings of the early generations, and the scholars of Islam."
   },
   "Nav": {
     "home": "Home",
@@ -18,36 +18,36 @@
   },
   "Home": {
     "brand": "Nwaya",
-    "tagline": "Sacred intentions for sleep, work, and training — so everyday acts are counted for Allah’s sake.",
-    "explore": "Explore intentions",
-    "featuredQuote": "Worldly work is according to the worker’s intention: if he intends good by it, it is good; and if he intends otherwise, it is according to what he intended — for the Prophet ﷺ said: “Actions are only by intentions, and every person will have only what he intended.”",
-    "featuredQuoteAttribution": "Shaykh Ibn Uthaymeen (may Allah have mercy on him) said",
-    "secondQuote": "How many a small deed is magnified by intention, and how many a great deed is diminished by intention.",
-    "secondQuoteAttribution": "It is narrated from Ibn al-Mubarak (may Allah have mercy on him)",
-    "sleepTitle": "Sleep Intentions",
-    "sleepDescription": "Following the Sunnah, giving the body its right, and gaining strength for worship.",
-    "workTitle": "Work Intentions",
-    "workDescription": "Lawful earning, providing for family, charity, and independence from people.",
-    "gymTitle": "Gym Intentions",
-    "gymDescription": "Strengthening the body, protecting family, and beautifying oneself with kindness."
+    "tagline": "Turn your everyday habits into acts of worship by renewing your intention for Allah in your sleep, work, and exercise, with authentic evidence from the Quran, the Sunnah, the early generations, and the scholars of Islam.",
+    "explore": "Explore Intentions",
+    "featuredQuote": "Worldly actions are judged according to the intention of the one who performs them. If he intends good through them, they become good for him; otherwise, he will have only what he intended. This is due to the saying of the Prophet ﷺ: “Actions are only by intentions, and every person shall have only what he intended.”",
+    "featuredQuoteAttribution": "— Shaykh Muhammad ibn Ṣāliḥ al-'Uthaymīn رحمه الله",
+    "secondQuote": "How many a small deed is made great by one's intention, and how many a great deed is made small by one's intention.",
+    "secondQuoteAttribution": "— Narrated from Abdullah ibn al-Mubarak رحمه الله",
+    "sleepTitle": "Intentions for Sleep",
+    "sleepDescription": "Intend to follow the Sunnah, give your body its rightful rest, and gain strength to worship Allah and fulfill your responsibilities.",
+    "workTitle": "Intentions for Work",
+    "workDescription": "Intend to earn lawful provision, support yourself and your family, benefit others, and remain independent from asking people.",
+    "gymTitle": "Intentions for Exercise",
+    "gymDescription": "Intend to strengthen your body for the obedience of Allah, preserve your health, prepare yourself to protect your family, and maintain a dignified appearance without arrogance or extravagance."
   },
   "Category": {
-    "backHome": "Back to home",
+    "backHome": "Back to Home",
     "intentionsHeading": "Intentions",
     "evidenceLabel": {
       "quran": "Quran",
-      "hadith": "Hadith",
-      "athar": "Athar",
-      "scholar": "Scholar"
+      "hadith": "Sunnah",
+      "athar": "Narration",
+      "scholar": "Scholar's Statement"
     }
   },
   "Footer": {
-    "rights": "We ask Allah for sincerity and acceptance.",
-    "builtFor": "For sincere intention in everyday deeds."
+    "rights": "We ask Allah to grant us sincerity in our intentions and acceptance of our deeds.",
+    "builtFor": "Helping Muslims seek reward in their everyday actions through sincere intention."
   },
   "NotFound": {
-    "title": "Page not found",
-    "description": "Sorry, we could not find this page.",
-    "backHome": "Back to home"
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist or may have been moved.",
+    "backHome": "Back to Home"
   }
 }

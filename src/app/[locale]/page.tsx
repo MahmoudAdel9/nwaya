@@ -55,7 +55,7 @@ export default async function HomePage({ params }: PageProps) {
           >
             {t("brand")}
           </h1>
-          <p className="text-muted-foreground mt-6 max-w-xl text-lg leading-relaxed md:text-xl">
+          <p className="text-muted-foreground mt-6 max-w-2xl text-lg leading-relaxed md:text-xl">
             {t("tagline")}
           </p>
           <CategoryLinks locale={typedLocale} />
