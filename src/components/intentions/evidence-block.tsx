@@ -76,7 +76,7 @@ export async function EvidenceBlock({ evidence, locale }: EvidenceBlockProps) {
         className={
           locale === "ar"
             ? "font-quote text-foreground text-lg leading-loose md:text-xl"
-            : "font-quote text-foreground text-base leading-relaxed italic md:text-lg"
+            : "font-quote text-foreground text-base leading-relaxed md:text-lg"
         }
       >
         <p>«{highlightText(text, highlightPhrases)}»</p>

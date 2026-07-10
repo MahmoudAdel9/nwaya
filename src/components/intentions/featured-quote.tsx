@@ -10,7 +10,13 @@ type QuoteProps = {
   index?: number;
 };
 
-function Quote({ attribution, text, locale, className, index = 0 }: QuoteProps) {
+function Quote({
+  attribution,
+  text,
+  locale,
+  className,
+  index = 0,
+}: QuoteProps) {
   return (
     <figure
       className={cn(
@@ -36,7 +42,7 @@ function Quote({ attribution, text, locale, className, index = 0 }: QuoteProps) 
         className={
           locale === "ar"
             ? "font-quote text-foreground text-lg leading-loose md:text-xl"
-            : "font-quote text-foreground text-base leading-relaxed italic md:text-lg"
+            : "font-quote text-foreground text-base leading-relaxed md:text-lg"
         }
       >
         <p>«{text}»</p>
@@ -73,10 +79,7 @@ export async function FeaturedQuote() {
   ];
 
   return (
-    <section
-      aria-labelledby="quotes-heading"
-      className="flex flex-col gap-4"
-    >
+    <section aria-labelledby="quotes-heading" className="flex flex-col gap-4">
       <div className="mb-2 flex items-center gap-3">
         <h2
           id="quotes-heading"
