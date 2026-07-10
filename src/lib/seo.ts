@@ -48,7 +48,7 @@ export async function buildHomeMetadata({
   alternates.canonical = url;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates,
     openGraph: {
