@@ -10,12 +10,7 @@ import {
   getTranslations,
   setRequestLocale,
 } from "next-intl/server";
-import {
-  Amiri,
-  IBM_Plex_Sans_Arabic,
-  Onest,
-  Source_Serif_4,
-} from "next/font/google";
+import { Amiri, IBM_Plex_Sans_Arabic, Onest } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 
@@ -41,26 +36,25 @@ const arSerifFont = Amiri({
   style: ["normal", "italic"],
 });
 
-const enUiFont = Onest({
+const enFont = Onest({
   subsets: ["latin"],
   variable: "--font-ui",
   display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 const enDisplayFont = Onest({
   subsets: ["latin"],
   variable: "--font-display",
   display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-const enSerifFont = Source_Serif_4({
+const enSerifFont = Onest({
   subsets: ["latin"],
   variable: "--font-serif",
   display: "swap",
-  weight: ["400", "600"],
-  style: ["normal", "italic"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 type LayoutProps = {
@@ -105,7 +99,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   const fonts =
     locale === "ar"
       ? [arUiFont, arDisplayFont, arSerifFont]
-      : [enUiFont, enDisplayFont, enSerifFont];
+      : [enFont, enDisplayFont, enSerifFont];
 
   return (
     <html
