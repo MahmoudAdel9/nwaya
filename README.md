@@ -58,14 +58,15 @@ src/
   components/           # UI components
   content/intentions/   # Intention categories (typed content)
   i18n/                 # next-intl routing & config
-  lib/                  # SEO, icons, utilities
+  lib/                  # SEO, icons, highlight helper, utilities
 messages/
   ar.json               # Arabic UI chrome (nav, SEO, labels)
   en.json               # English UI chrome
 ```
 
-- **Content** (intentions + evidence): `src/content/intentions/`
+- **Content** (intentions + evidence + optional phrase highlights): `src/content/intentions/`
 - **UI strings** (nav, home copy, labels): `messages/ar.json` and `messages/en.json`
+- **Phrase highlighting**: `src/lib/highlight-text.tsx` (used by evidence blocks and intention titles)
 
 ---
 
@@ -92,11 +93,32 @@ messages/
 When adding or editing intentions:
 
 - Prefer clear, practical intentions a Muslim can actually hold in daily life
-- Every intention should include at least one piece of **evidence**
+- Every intention should include at least one piece of **evidence** (title-only entries are rare; use them only when the intention itself is the point)
 - Evidence kinds: `quran` | `hadith` | `athar` | `scholar` | `note`
 - Cite sources carefully (surah, collection, narrator, scholar name)
 - Provide **both** `ar` and `en` for titles, texts, and sources
 - Do not invent or weakly attribute texts — accuracy matters more than volume
+- Use **phrase highlights** to emphasize the key wording that supports the intention (see below)
+
+### Phrase highlights
+
+Key phrases in evidence text (and optionally in intention titles) can be emphasized in the UI with a soft accent mark.
+
+- On an **evidence**: optional `highlights?: LocaleString[]`
+- On an **intention**: optional `titleHighlights?: LocaleString[]` (useful when there is no evidence body)
+
+Each entry must be an **exact substring** of the corresponding `ar` / `en` text — including Arabic diacritics. Mismatched harakat will not highlight.
+
+```ts
+highlights: [
+  {
+    ar: "ونَمْ", // must appear verbatim inside text.ar
+    en: "sleep", // must appear verbatim inside text.en
+  },
+],
+```
+
+Prefer short, meaningful spans (the sleep-related word, the ruling phrase, etc.), not the entire narration unless the whole text is the point.
 
 ---
 
@@ -112,6 +134,8 @@ When adding or editing intentions:
     ar: "عنوان النية",
     en: "Intention title",
   },
+  // optional — emphasize a phrase inside the title:
+  // titleHighlights: [{ ar: "…", en: "…" }],
   evidences: [
     {
       kind: "hadith", // quran | hadith | athar | scholar | note
@@ -119,6 +143,13 @@ When adding or editing intentions:
         ar: "نص الدليل…",
         en: "Evidence text…",
       },
+      // optional — exact substrings of text.ar / text.en:
+      highlights: [
+        {
+          ar: "العبارة المميزة",
+          en: "the key phrase",
+        },
+      ],
       source: {
         ar: "المصدر بالعربية",
         en: "Source in English",
@@ -130,7 +161,7 @@ When adding or editing intentions:
 }
 ```
 
-3. Save and check the category page in the browser (`/ar/intentions/sleep`, `/en/intentions/sleep`).
+3. Save and check the category page in the browser (`/ar/intentions/sleep`, `/en/intentions/sleep`). Confirm highlighted phrases render correctly in both locales.
 
 ---
 
@@ -198,6 +229,7 @@ Then open `/ar/intentions/<slug>` and `/en/intentions/<slug>`.
 | What                         | Where                                      |
 | ---------------------------- | ------------------------------------------ |
 | Intention titles & evidence  | `src/content/intentions/*.ts`              |
+| Phrase highlights (ar / en)  | `highlights` / `titleHighlights` in those files |
 | Nav, SEO, home, footer, UI   | `messages/ar.json`, `messages/en.json`     |
 
 Always update **both** locales. Arabic is the default locale.
