@@ -41,7 +41,7 @@ function NavLinks({
   const pathname = usePathname();
 
   return (
-    <nav aria-label="Primary" className={cn("flex gap-1", className)}>
+    <nav aria-label="Primary" className={cn("flex gap-0.5", className)}>
       {navItems.map((item) => {
         const isActive =
           item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
@@ -53,10 +53,10 @@ function NavLinks({
             href={item.href}
             onClick={onNavigate}
             className={cn(
-              "inline-flex items-center gap-2 rounded-md px-3 py-2 text-base transition-colors",
+              "relative inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors md:text-base",
               isActive
-                ? "bg-primary dark:text-foreground text-white"
-                : "text-muted-foreground hover:text-foreground hover:bg-primary/80",
+                ? "text-primary"
+                : "text-muted-foreground hover:text-foreground hover:bg-muted/60",
             )}
             aria-current={isActive ? "page" : undefined}
           >
@@ -68,6 +68,12 @@ function NavLinks({
               />
             ) : null}
             {t(item.key)}
+            {isActive ? (
+              <span
+                aria-hidden="true"
+                className="bg-primary absolute inset-x-3 -bottom-0.5 h-0.5 rounded-full md:inset-x-2.5"
+              />
+            ) : null}
           </Link>
         );
       })}
@@ -81,17 +87,18 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="border-border/60 bg-background/70 sticky top-0 z-40 border-b backdrop-blur-md">
+    <header className="border-border/40 bg-background/65 sticky top-0 z-40 border-b backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-3xl items-center justify-between gap-4 px-4 sm:px-6">
         <Link
           href="/"
-          className="font-heading text-foreground text-xl font-semibold tracking-tight"
+          className="font-heading text-foreground hover:text-primary text-xl font-bold tracking-tight transition-colors"
         >
           {tHome("brand")}
         </Link>
 
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden items-center gap-1 md:flex">
           <NavLinks className="items-center" />
+          <div className="bg-border/80 mx-2 h-4 w-px" aria-hidden="true" />
           <ThemeToggle />
           <LocaleSwitcher />
         </div>
@@ -114,7 +121,9 @@ export function SiteHeader() {
             </SheetTrigger>
             <SheetContent side="right" className="w-72">
               <SheetHeader>
-                <SheetTitle>{tHome("brand")}</SheetTitle>
+                <SheetTitle className="font-heading text-xl font-bold">
+                  {tHome("brand")}
+                </SheetTitle>
               </SheetHeader>
               <NavLinks
                 className="mt-4 flex-col items-stretch px-2"

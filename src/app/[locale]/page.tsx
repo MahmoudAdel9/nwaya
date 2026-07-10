@@ -39,27 +39,61 @@ export default async function HomePage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24">
-        <FeaturedQuote />
-
+      <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <section
           aria-labelledby="home-heading"
-          className="animate-rise mt-16 min-h-[70vh] sm:mt-20"
+          className="relative flex min-h-[calc(100svh-4rem)] flex-col justify-center py-16 sm:py-20"
         >
-          <p className="text-primary mb-4 text-sm tracking-[0.25em] uppercase md:text-base">
+          <div
+            aria-hidden="true"
+            className="bg-accent/20 animate-draw absolute inset-s-0 top-16 h-px w-16 sm:top-20"
+          />
+
+          <p className="text-accent animate-fade mb-5 text-sm font-medium tracking-[0.28em] uppercase md:text-base">
             {t("explore")}
           </p>
+
           <h1
             id="home-heading"
-            className="font-heading text-5xl font-semibold tracking-tight sm:text-6xl md:text-7xl"
+            className="font-heading animate-rise text-[clamp(3.25rem,12vw,5.5rem)] leading-[0.95] font-bold tracking-tight"
           >
             {t("brand")}
           </h1>
-          <p className="text-muted-foreground mt-6 max-w-2xl text-lg leading-relaxed md:text-xl">
+
+          <p
+            className="text-muted-foreground animate-rise mt-6 max-w-xl text-lg leading-relaxed md:text-xl"
+            style={{ animationDelay: "120ms" }}
+          >
             {t("tagline")}
           </p>
+
+          <div
+            className="animate-rise mt-10"
+            style={{ animationDelay: "220ms" }}
+          >
+            <a
+              href="#categories"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-medium transition-colors md:text-base"
+            >
+              {t("explore")}
+            </a>
+          </div>
+        </section>
+
+        <section
+          id="categories"
+          aria-labelledby="categories-heading"
+          className="scroll-mt-24 pb-20 sm:pb-28"
+        >
+          <h2 id="categories-heading" className="sr-only">
+            {t("explore")}
+          </h2>
           <CategoryLinks locale={typedLocale} />
         </section>
+
+        <div className="pb-20 sm:pb-28">
+          <FeaturedQuote />
+        </div>
       </div>
     </>
   );

@@ -9,29 +9,29 @@ const kindStyles: Record<
   { accent: string; label: string; surface: string }
 > = {
   quran: {
-    accent: "border-s-quran/70",
+    accent: "border-s-quran",
     label: "text-quran",
-    surface: "border-quran/20 bg-quran/8",
+    surface: "border-quran/15 bg-quran/6",
   },
   hadith: {
-    accent: "border-s-hadith/70",
+    accent: "border-s-hadith",
     label: "text-hadith",
-    surface: "border-hadith/20 bg-hadith/8",
+    surface: "border-hadith/15 bg-hadith/6",
   },
   athar: {
-    accent: "border-s-border",
-    label: "text-foreground/75",
-    surface: "border-border/50 bg-muted/30",
+    accent: "border-s-accent/70",
+    label: "text-accent",
+    surface: "border-accent/15 bg-accent/5",
   },
   scholar: {
     accent: "border-s-border",
-    label: "text-foreground/75",
-    surface: "border-border/50 bg-muted/30",
+    label: "text-foreground/70",
+    surface: "border-border/40 bg-muted/25",
   },
   note: {
     accent: "border-s-border",
-    label: "text-foreground/75",
-    surface: "border-border/50 bg-muted/30",
+    label: "text-foreground/70",
+    surface: "border-border/40 bg-muted/25",
   },
 };
 
@@ -71,15 +71,15 @@ export async function EvidenceBlock({ evidence, locale }: EvidenceBlockProps) {
         lang={locale === "ar" ? "ar" : "en"}
         className={
           locale === "ar"
-            ? "text-foreground font-sans text-base leading-loose md:text-lg"
-            : "font-quote text-foreground text-base leading-relaxed md:text-lg"
+            ? "font-quote text-foreground text-lg leading-loose md:text-xl"
+            : "font-quote text-foreground text-base leading-relaxed italic md:text-lg"
         }
       >
         <p>«{localize(evidence.text, locale)}»</p>
       </blockquote>
       {localize(evidence.source, locale) ? (
-        <footer className="border-border/35 mt-4 border-t pt-3">
-          <p className="text-foreground/80 text-sm leading-relaxed">
+        <footer className="border-border/30 mt-4 border-t pt-3">
+          <p className="text-muted-foreground text-sm leading-relaxed">
             {localize(evidence.source, locale)}
           </p>
         </footer>

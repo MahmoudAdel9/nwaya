@@ -1,9 +1,4 @@
-import {
-  Cairo,
-  IBM_Plex_Sans_Arabic,
-  Onest,
-  Source_Serif_4,
-} from "next/font/google";
+import { Amiri, Cairo, IBM_Plex_Sans_Arabic } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import {
@@ -19,26 +14,26 @@ import { routing } from "@/i18n/routing";
 import { getSiteUrl } from "@/lib/seo";
 import "../globals.css";
 
-const uiFont = Cairo({
-  subsets: ["latin"],
+const uiFont = IBM_Plex_Sans_Arabic({
+  subsets: ["arabic", "latin"],
   variable: "--font-ui",
   display: "swap",
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const displayFont = Cairo({
-  subsets: ["latin"],
+  subsets: ["arabic", "latin"],
   variable: "--font-display",
   display: "swap",
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
-const serifFont = Onest({
-  subsets: ["latin"],
+const serifFont = Amiri({
+  subsets: ["arabic", "latin"],
   variable: "--font-serif",
   display: "swap",
-  weight: ["400", "600"],
-  style: ["normal"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
 });
 
 type LayoutProps = {

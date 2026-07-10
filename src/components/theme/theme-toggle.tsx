@@ -28,9 +28,9 @@ export function ThemeToggle() {
       className="text-muted-foreground hover:text-foreground"
     >
       {mounted && !isDark ? (
-        <MoonIcon className="size-3.5" aria-hidden="true" />
+        <MoonIcon className="size-4" strokeWidth={1.75} aria-hidden="true" />
       ) : (
-        <SunIcon className="size-3.5" aria-hidden="true" />
+        <SunIcon className="size-4" strokeWidth={1.75} aria-hidden="true" />
       )}
     </Button>
   );

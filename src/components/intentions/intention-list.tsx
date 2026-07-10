@@ -12,9 +12,9 @@ type IntentionItemProps = {
 
 function shellForLevel(level: number) {
   if (level === 0) {
-    return "border-border/45 bg-card/55 hover:border-primary/35 hover:bg-card/70 open:border-primary/40 open:bg-card/80";
+    return "border-border/40 bg-card/50 hover:border-primary/30 hover:bg-card/70 open:border-primary/35 open:bg-card/80 backdrop-blur-sm";
   }
-  return "border-border/50 bg-muted/45 hover:border-primary/30 hover:bg-muted/60 open:border-primary/35 open:bg-muted/70";
+  return "border-border/45 bg-muted/35 hover:border-primary/25 hover:bg-muted/55 open:border-primary/30 open:bg-muted/65";
 }
 
 export function IntentionItem({
@@ -62,13 +62,13 @@ export function IntentionItem({
         <h3 className={cn(titleClass, "min-w-0 flex-1")}>{title}</h3>
         <span
           aria-hidden="true"
-          className="bg-muted/50 text-muted-foreground group-open/intention:bg-primary/20 group-open/intention:text-primary mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full transition-colors"
+          className="bg-muted/60 text-muted-foreground group-open/intention:bg-primary/15 group-open/intention:text-primary mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-lg transition-colors"
         >
           <ChevronDownIcon className="size-4 transition-transform duration-200 group-open/intention:rotate-180" />
         </span>
       </summary>
 
-      <div className="border-border/30 space-y-4 border-t px-4 pt-4 pb-5 sm:px-5">
+      <div className="border-border/25 space-y-4 border-t px-4 pt-4 pb-5 sm:px-5">
         {hasEvidences ? (
           <div className="flex flex-col gap-3">
             {intention.evidences.map((evidence, index) => (
@@ -82,7 +82,7 @@ export function IntentionItem({
         ) : null}
 
         {hasChildren ? (
-          <div className="border-border/40 ms-1 flex flex-col gap-2.5 border-s-2 ps-3 sm:ps-4">
+          <div className="border-primary/20 ms-1 flex flex-col gap-2.5 border-s-2 ps-3 sm:ps-4">
             {intention.children!.map((child) => (
               <IntentionItem
                 key={child.id}
@@ -105,7 +105,7 @@ type IntentionListProps = {
 
 export function IntentionList({ intentions, locale }: IntentionListProps) {
   return (
-    <div className="flex w-full flex-col gap-4">
+    <div className="flex w-full flex-col gap-3.5">
       {intentions.map((intention) => (
         <IntentionItem
           key={intention.id}

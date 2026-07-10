@@ -5,10 +5,16 @@ export async function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-border/60 mt-auto border-t text-center">
-      <div className="border-border/40 flex flex-col gap-2 border-t py-6 text-base">
-        <p className="text-muted-foreground leading-relaxed">{t("rights")}</p>
-        <p className="text-muted-foreground">{t("copyright", { year })}</p>
+    <footer className="border-border/40 mt-auto border-t">
+      <div className="mx-auto flex max-w-3xl flex-col items-center gap-3 px-4 py-10 text-center sm:px-6">
+        <div
+          aria-hidden="true"
+          className="bg-accent/40 mb-1 h-px w-10"
+        />
+        <p className="font-quote text-foreground/85 max-w-md text-base leading-relaxed italic md:text-lg">
+          {t("rights")}
+        </p>
+        <p className="text-muted-foreground text-sm">{t("copyright", { year })}</p>
       </div>
     </footer>
   );

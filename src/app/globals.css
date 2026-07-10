@@ -42,6 +42,7 @@
   --color-card: var(--card);
   --color-quran: var(--quran);
   --color-hadith: var(--hadith);
+  --color-glow: var(--glow);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -51,114 +52,113 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-/* Soft day — light theme for نوايا */
+/* Sacred Quiet — light: cool pearl, deep olive, soft gold */
 :root {
   color-scheme: light;
 
-  --background: oklch(0.97 0.01 240);
-  --foreground: oklch(0.24 0.03 248);
+  --background: oklch(0.975 0.008 210);
+  --foreground: oklch(0.22 0.028 250);
 
-  --card: oklch(0.99 0.005 240);
-  --card-foreground: oklch(0.24 0.03 248);
+  --card: oklch(0.99 0.004 210);
+  --card-foreground: oklch(0.22 0.028 250);
 
-  --popover: oklch(0.99 0.005 240);
-  --popover-foreground: oklch(0.24 0.03 248);
+  --popover: oklch(0.995 0.003 210);
+  --popover-foreground: oklch(0.22 0.028 250);
 
-  /* Deeper emerald for contrast on light surfaces */
-  --primary: oklch(0.48 0.13 155);
-  --primary-foreground: oklch(0.98 0.005 95);
+  /* Deep olive — grounded, contemplative */
+  --primary: oklch(0.4 0.075 155);
+  --primary-foreground: oklch(0.98 0.01 95);
 
-  --secondary: oklch(0.93 0.015 242);
-  --secondary-foreground: oklch(0.28 0.03 248);
+  --secondary: oklch(0.94 0.012 200);
+  --secondary-foreground: oklch(0.28 0.03 250);
 
-  --muted: oklch(0.94 0.012 242);
-  --muted-foreground: oklch(0.48 0.02 248);
+  --muted: oklch(0.945 0.01 205);
+  --muted-foreground: oklch(0.48 0.025 250);
 
-  /* Softer blue accent */
-  --accent: oklch(0.55 0.12 240);
-  --accent-foreground: oklch(0.98 0.005 95);
+  /* Soft gold — sacred highlight */
+  --accent: oklch(0.58 0.1 70);
+  --accent-foreground: oklch(0.2 0.03 70);
 
-  --destructive: oklch(0.55 0.2 25);
+  --destructive: oklch(0.52 0.18 25);
 
-  --border: oklch(0.36 0.02 242 / 14%);
-  --input: oklch(0.36 0.02 242 / 18%);
-  --ring: oklch(0.48 0.13 155);
+  --border: oklch(0.35 0.02 220 / 12%);
+  --input: oklch(0.35 0.02 220 / 16%);
+  --ring: oklch(0.4 0.075 155);
 
-  --quran: oklch(0.48 0.13 155);
-  --hadith: oklch(0.5 0.12 235);
+  --quran: oklch(0.42 0.08 155);
+  --hadith: oklch(0.45 0.09 245);
+  --glow: oklch(0.72 0.08 70);
 
-  --chart-1: oklch(0.48 0.13 155);
-  --chart-2: oklch(0.5 0.12 235);
-  --chart-3: oklch(0.52 0.1 195);
-  --chart-4: oklch(0.48 0.09 170);
-  --chart-5: oklch(0.42 0.06 245);
+  --chart-1: oklch(0.4 0.075 155);
+  --chart-2: oklch(0.58 0.1 70);
+  --chart-3: oklch(0.45 0.09 245);
+  --chart-4: oklch(0.5 0.07 180);
+  --chart-5: oklch(0.42 0.05 250);
 
-  --radius: 0.75rem;
+  --radius: 0.875rem;
 
-  --sidebar: oklch(0.96 0.01 242);
-  --sidebar-foreground: oklch(0.24 0.03 248);
+  --sidebar: oklch(0.96 0.008 210);
+  --sidebar-foreground: oklch(0.22 0.028 250);
 
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
 
-  --sidebar-accent: oklch(0.93 0.015 242);
-  --sidebar-accent-foreground: oklch(0.24 0.03 248);
+  --sidebar-accent: oklch(0.94 0.012 200);
+  --sidebar-accent-foreground: oklch(0.22 0.028 250);
 
   --sidebar-border: var(--border);
   --sidebar-ring: var(--ring);
 }
 
-/* Contemplative night — default theme for نوايا */
+/* Sacred Quiet — dark: deep ink night, soft sage, warm gold */
 .dark {
   color-scheme: dark;
 
-  --background: oklch(0.17 0.025 248);
-  --foreground: oklch(0.96 0.01 95);
+  --background: oklch(0.155 0.022 255);
+  --foreground: oklch(0.95 0.012 95);
 
-  --card: oklch(0.22 0.025 245);
-  --card-foreground: oklch(0.96 0.01 95);
+  --card: oklch(0.2 0.022 252);
+  --card-foreground: oklch(0.95 0.012 95);
 
-  --popover: oklch(0.22 0.025 245);
-  --popover-foreground: oklch(0.96 0.01 95);
+  --popover: oklch(0.2 0.022 252);
+  --popover-foreground: oklch(0.95 0.012 95);
 
-  /* Emerald */
-  --primary: oklch(0.73 0.16 155);
-  --primary-foreground: oklch(0.16 0.02 250);
+  --primary: oklch(0.74 0.1 155);
+  --primary-foreground: oklch(0.16 0.025 255);
 
-  /* Deep blue surface */
-  --secondary: oklch(0.28 0.03 242);
-  --secondary-foreground: oklch(0.96 0.01 95);
+  --secondary: oklch(0.26 0.025 250);
+  --secondary-foreground: oklch(0.95 0.012 95);
 
-  --muted: oklch(0.26 0.02 242);
-  --muted-foreground: oklch(0.84 0.02 95);
+  --muted: oklch(0.24 0.02 250);
+  --muted-foreground: oklch(0.72 0.02 95);
 
-  /* Blue accent */
-  --accent: oklch(0.57 0.14 240);
-  --accent-foreground: oklch(0.98 0.005 95);
+  --accent: oklch(0.78 0.1 75);
+  --accent-foreground: oklch(0.18 0.03 75);
 
-  --destructive: oklch(0.63 0.2 25);
+  --destructive: oklch(0.65 0.18 25);
 
-  --border: oklch(0.36 0.02 242 / 22%);
-  --input: oklch(0.32 0.02 242 / 30%);
-  --ring: oklch(0.73 0.16 155);
+  --border: oklch(0.7 0.02 95 / 12%);
+  --input: oklch(0.7 0.02 95 / 16%);
+  --ring: oklch(0.74 0.1 155);
 
-  --quran: oklch(0.73 0.16 155);
-  --hadith: oklch(0.65 0.14 235);
+  --quran: oklch(0.74 0.1 155);
+  --hadith: oklch(0.7 0.1 245);
+  --glow: oklch(0.7 0.1 75);
 
-  --chart-1: oklch(0.73 0.16 155);
-  --chart-2: oklch(0.65 0.14 235);
-  --chart-3: oklch(0.61 0.11 195);
-  --chart-4: oklch(0.52 0.09 170);
-  --chart-5: oklch(0.42 0.06 245);
+  --chart-1: oklch(0.74 0.1 155);
+  --chart-2: oklch(0.78 0.1 75);
+  --chart-3: oklch(0.7 0.1 245);
+  --chart-4: oklch(0.65 0.08 180);
+  --chart-5: oklch(0.5 0.05 250);
 
-  --sidebar: oklch(0.2 0.025 245);
-  --sidebar-foreground: oklch(0.96 0.01 95);
+  --sidebar: oklch(0.18 0.022 252);
+  --sidebar-foreground: oklch(0.95 0.012 95);
 
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
 
-  --sidebar-accent: oklch(0.27 0.025 242);
-  --sidebar-accent-foreground: oklch(0.96 0.01 95);
+  --sidebar-accent: oklch(0.26 0.025 250);
+  --sidebar-accent-foreground: oklch(0.95 0.012 95);
 
   --sidebar-border: var(--border);
   --sidebar-ring: var(--ring);
@@ -176,32 +176,45 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
 
-    background-image:
-      radial-gradient(circle at 50% -15%,
-        oklch(0.72 0.06 235 / 0.28),
-        transparent 45%),
-      radial-gradient(circle at 0% 100%,
-        oklch(0.7 0.08 155 / 0.12),
-        transparent 35%),
-      radial-gradient(circle at 100% 100%,
-        oklch(0.72 0.06 195 / 0.1),
-        transparent 30%);
-
     background-color: var(--background);
+    background-image:
+      radial-gradient(
+        ellipse 90% 55% at 50% -20%,
+        oklch(0.78 0.06 70 / 0.18),
+        transparent 55%
+      ),
+      radial-gradient(
+        ellipse 50% 40% at 0% 80%,
+        oklch(0.65 0.06 155 / 0.1),
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse 45% 35% at 100% 70%,
+        oklch(0.7 0.05 210 / 0.1),
+        transparent 50%
+      ),
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232a3d4a' fill-opacity='0.035'%3E%3Cpath d='M30 0l2.5 12.5L45 15l-12.5 2.5L30 30l-2.5-12.5L15 15l12.5-2.5z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
   }
 
   .dark body {
     background-image:
-      radial-gradient(circle at 50% -15%,
-        oklch(0.42 0.12 235 / 0.35),
-        transparent 45%),
-      radial-gradient(circle at 0% 100%,
-        oklch(0.58 0.14 155 / 0.14),
-        transparent 35%),
-      radial-gradient(circle at 100% 100%,
-        oklch(0.52 0.1 195 / 0.12),
-        transparent 30%);
+      radial-gradient(
+        ellipse 90% 55% at 50% -20%,
+        oklch(0.45 0.08 70 / 0.2),
+        transparent 55%
+      ),
+      radial-gradient(
+        ellipse 50% 40% at 0% 80%,
+        oklch(0.4 0.08 155 / 0.16),
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse 45% 35% at 100% 70%,
+        oklch(0.35 0.06 250 / 0.18),
+        transparent 50%
+      ),
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e8e0d0' fill-opacity='0.03'%3E%3Cpath d='M30 0l2.5 12.5L45 15l-12.5 2.5L30 30l-2.5-12.5L15 15l12.5-2.5z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -226,7 +239,7 @@
 @keyframes rise-in {
   from {
     opacity: 0;
-    transform: translateY(0.75rem);
+    transform: translateY(1rem);
   }
 
   to {
@@ -235,6 +248,39 @@
   }
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes draw-line {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
 @utility animate-rise {
-  animation: rise-in 0.7s ease-out both;
+  animation: rise-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@utility animate-fade {
+  animation: fade-in 1s ease-out both;
+}
+
+@utility animate-draw {
+  transform-origin: var(--draw-origin, left);
+  animation: draw-line 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+[dir="rtl"] .animate-draw {
+  --draw-origin: right;
 }

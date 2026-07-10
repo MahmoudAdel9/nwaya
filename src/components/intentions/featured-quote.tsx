@@ -7,19 +7,26 @@ type QuoteProps = {
   text: string;
   locale: string;
   className?: string;
+  index?: number;
 };
 
-function Quote({ attribution, text, locale, className }: QuoteProps) {
+function Quote({ attribution, text, locale, className, index = 0 }: QuoteProps) {
   return (
     <figure
       className={cn(
-        "border-primary/25 bg-primary/8 border-s-primary/70 rounded-2xl border border-s-[3px] px-5 py-5 sm:px-6 sm:py-6",
+        "animate-rise border-border/50 relative overflow-hidden rounded-2xl border px-5 py-5 sm:px-6 sm:py-6",
+        "bg-card/40 backdrop-blur-sm",
         className,
       )}
+      style={{ animationDelay: `${index * 80}ms` }}
     >
-      <figcaption className="text-primary mb-3 flex items-center gap-2 text-sm font-semibold tracking-[0.08em] md:text-base">
+      <div
+        aria-hidden="true"
+        className="bg-accent absolute start-0 top-0 bottom-0 w-[3px]"
+      />
+      <figcaption className="text-accent mb-3 flex items-center gap-2 text-sm font-semibold tracking-[0.06em] md:text-base">
         <QuoteIcon
-          className="size-3.5 shrink-0 opacity-80"
+          className="size-3.5 shrink-0 opacity-70"
           aria-hidden="true"
         />
         {attribution}
@@ -28,8 +35,8 @@ function Quote({ attribution, text, locale, className }: QuoteProps) {
         lang={locale}
         className={
           locale === "ar"
-            ? "text-foreground font-sans text-base leading-loose md:text-lg"
-            : "font-quote text-foreground text-base leading-relaxed md:text-lg"
+            ? "font-quote text-foreground text-lg leading-loose md:text-xl"
+            : "font-quote text-foreground text-base leading-relaxed italic md:text-lg"
         }
       >
         <p>«{text}»</p>
@@ -42,42 +49,55 @@ export async function FeaturedQuote() {
   const t = await getTranslations("Home");
   const locale = await getLocale();
 
+  const quotes = [
+    {
+      attribution: t("featuredQuoteAttribution"),
+      text: t("featuredQuote"),
+    },
+    {
+      attribution: t("secondQuoteAttribution"),
+      text: t("secondQuote"),
+    },
+    {
+      attribution: t("thirdQuoteAttribution"),
+      text: t("thirdQuote"),
+    },
+    {
+      attribution: t("fourthQuoteAttribution"),
+      text: t("fourthQuote"),
+    },
+    {
+      attribution: t("fifthQuoteAttribution"),
+      text: t("fifthQuote"),
+    },
+  ];
+
   return (
     <section
       aria-labelledby="quotes-heading"
-      className="animate-rise flex flex-col gap-4"
+      className="flex flex-col gap-4"
     >
-      <h2
-        id="quotes-heading"
-        className="text-primary text-sm font-semibold tracking-[0.25em] uppercase md:text-base"
-      >
-        {t("quotesTitle")}
-      </h2>
-      <Quote
-        locale={locale}
-        attribution={t("featuredQuoteAttribution")}
-        text={t("featuredQuote")}
-      />
-      <Quote
-        locale={locale}
-        attribution={t("secondQuoteAttribution")}
-        text={t("secondQuote")}
-      />
-      <Quote
-        locale={locale}
-        attribution={t("thirdQuoteAttribution")}
-        text={t("thirdQuote")}
-      />
-      <Quote
-        locale={locale}
-        attribution={t("fourthQuoteAttribution")}
-        text={t("fourthQuote")}
-      />
-      <Quote
-        locale={locale}
-        attribution={t("fifthQuoteAttribution")}
-        text={t("fifthQuote")}
-      />
+      <div className="mb-2 flex items-center gap-3">
+        <h2
+          id="quotes-heading"
+          className="text-accent text-sm font-semibold tracking-[0.25em] uppercase md:text-base"
+        >
+          {t("quotesTitle")}
+        </h2>
+        <div
+          aria-hidden="true"
+          className="bg-border/70 animate-draw h-px flex-1"
+        />
+      </div>
+      {quotes.map((quote, index) => (
+        <Quote
+          key={quote.attribution}
+          locale={locale}
+          attribution={quote.attribution}
+          text={quote.text}
+          index={index}
+        />
+      ))}
     </section>
   );
 }
