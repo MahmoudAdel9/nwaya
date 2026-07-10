@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import {
   getAllCategories,
@@ -56,8 +57,13 @@ export async function CategoryLinks({ locale }: CategoryLinksProps) {
                 />
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <span className="font-heading text-foreground group-hover:text-primary block text-2xl font-semibold tracking-tight transition-colors md:text-3xl">
+              <span className="font-heading text-foreground group-hover:text-primary flex items-center gap-2 text-2xl font-semibold tracking-tight transition-colors md:gap-3 md:text-3xl">
                 {t(keys.title)}
+                <ArrowRightIcon
+                  className="text-muted-foreground group-hover:text-primary size-5 shrink-0 transition-all group-hover:translate-x-1 md:size-6 rtl:rotate-180 rtl:group-hover:-translate-x-1"
+                  strokeWidth={1.75}
+                  aria-hidden="true"
+                />
               </span>
               <span className="text-muted-foreground mt-2 block max-w-xl text-lg leading-relaxed">
                 {t(keys.description)}
