@@ -10,7 +10,7 @@ import {
   getTranslations,
   setRequestLocale,
 } from "next-intl/server";
-import { Amiri, IBM_Plex_Sans_Arabic } from "next/font/google";
+import { Amiri, IBM_Plex_Sans_Arabic, Roboto } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 
@@ -28,8 +28,8 @@ const displayFont = IBM_Plex_Sans_Arabic({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const serifFont = Amiri({
-  subsets: ["arabic", "latin"],
+const serifFont = Roboto({
+  subsets: ["latin"],
   variable: "--font-serif",
   display: "swap",
   weight: ["400", "700"],
