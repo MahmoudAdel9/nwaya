@@ -43,8 +43,12 @@
   },
   "Footer": {
     "rights": "We ask Allah to grant us sincerity in our intentions and acceptance of our deeds.",
-    "builtFor": "Helping Muslims seek reward in their everyday actions through sincere intention."
+    "builtFor": "Helping Muslims seek reward in their everyday actions through sincere intention.",
+    "explore": "Explore",
+    "navLabel": "Footer",
+    "copyright": "© {year} Nwaya"
   },
+
   "NotFound": {
     "title": "Page Not Found",
     "description": "Sorry, the page you are looking for does not exist or may have been moved.",
