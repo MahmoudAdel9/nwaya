@@ -48,9 +48,9 @@ export async function CategoryLinks({ locale }: CategoryLinksProps) {
                 animationDelay: `${(index + 1) * 100}ms`,
               }}
             >
-              <span className="text-primary mb-3 flex items-center gap-2.5 text-xs tracking-[0.2em] uppercase">
+              <span className="text-primary mb-3 flex items-center gap-2.5 text-sm font-semibold tracking-[0.2em] uppercase md:text-base">
                 <Icon
-                  className="size-4 shrink-0"
+                  className="size-5 shrink-0"
                   strokeWidth={1.75}
                   aria-hidden="true"
                 />
