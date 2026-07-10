@@ -21,4 +21,5 @@ export const evidenceIcons: Record<EvidenceKind, LucideIcon> = {
   hadith: ScrollTextIcon,
   athar: QuoteIcon,
   scholar: GraduationCapIcon,
+  note: QuoteIcon,
 };

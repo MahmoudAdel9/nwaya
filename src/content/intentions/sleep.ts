@@ -26,8 +26,8 @@ export const sleepCategory: IntentionCategory = {
             en: "Pray and sleep.",
           },
           source: {
-            ar: "في الصحيح من حديث عبدالله بن عمرو بن العاص رضي الله عنه أن النبي صلى الله عليه وسلم قال له",
-            en: "In the authentic collection, from the hadith of Abdullah ibn Amr ibn al-As (may Allah be pleased with them), the Prophet ﷺ said to him",
+            ar: "رواه البخاري في صحيحه من حديث عبدالله بن عمرو بن العاص رضي الله عنه",
+            en: "Narrated by al-Bukhari in his Sahih from the hadith of Abdullah ibn Amr ibn al-As (may Allah be pleased with them)",
           },
         },
       ],
@@ -46,8 +46,8 @@ export const sleepCategory: IntentionCategory = {
             en: "By Allah, I am the most fearful of Allah among you and the most mindful of Him; yet I fast and break my fast, I pray and I sleep, and I marry women. Whoever turns away from my Sunnah is not of me.",
           },
           source: {
-            ar: "في الصحيح من حديث أنس بن مالك رضي الله عنه",
-            en: "In the authentic collection, from the hadith of Anas ibn Malik (may Allah be pleased with him)",
+            ar: "رواه البخاري في صحيحه من حديث أنس بن مالك رضي الله عنه",
+            en: "Narrated by al-Bukhari in his Sahih from the hadith of Anas ibn Malik (may Allah be pleased with him)",
           },
         },
       ],
@@ -66,8 +66,8 @@ export const sleepCategory: IntentionCategory = {
             en: "Fast and break your fast, pray and sleep; for your body has a right over you, and your eyes have a right over you.",
           },
           source: {
-            ar: "في الصحيح من حديث عبدالله بن عمرو أن النبي صلى الله عليه وسلم قال له",
-            en: "In the authentic collection, from the hadith of Abdullah ibn Amr, the Prophet ﷺ said to him",
+            ar: "رواه البخاري في صحيحه من حديث عبدالله بن عمرو رضي الله عنه",
+            en: "Narrated by al-Bukhari in his Sahih from the hadith of Abdullah ibn Amr (may Allah be pleased with him)",
           },
         },
       ],
@@ -86,8 +86,19 @@ export const sleepCategory: IntentionCategory = {
             en: "There should be neither harm nor reciprocating harm.",
           },
           source: {
-            ar: "روى ابن ماجه في سننه متصلاً ومالك في الموطأ مرسلاً من طريق أبي سعيد الخدري، ولا شك أن قلة النوم تضر بالجسم والتركيز وغيره عند أغلب الناس",
-            en: "Narrated by Ibn Majah with a connected chain and by Malik in al-Muwatta as a mursal report from Abu Sa‘id al-Khudri. There is no doubt that lack of sleep harms the body, focus, and more for most people.",
+            ar: "رواه ابن ماجه في سننه متصلاً ومالك في الموطأ مرسلاً من حديث أبي سعيد الخدري رضي الله عنه",
+            en: "Narrated by Ibn Majah in his Sunan with a connected chain and by Malik in al-Muwatta as a mursal report from the hadith of Abu Sa‘id al-Khudri (may Allah be pleased with him)",
+          },
+        },
+        {
+          kind: "note",
+          text: {
+            ar: "ولا شك أن قلة النوم تضر بالجسم والتركيز وغيره عند أغلب الناس",
+            en: "There is no doubt that lack of sleep harms the body, focus, and more for most people.",
+          },
+          source: {
+            ar: "",
+            en: "",
           },
         },
       ],
@@ -106,8 +117,19 @@ export const sleepCategory: IntentionCategory = {
             en: "Be eager for what benefits you.",
           },
           source: {
-            ar: "في صحيح مسلم من حديث أبي هريرة رضي الله عنه، ولا شك أن النوم مما ينفع الإنسان",
-            en: "In Sahih Muslim, from the hadith of Abu Hurayrah (may Allah be pleased with him). Sleep is undoubtedly among what benefits a person.",
+            ar: "رواه مسلم في صحيحه من حديث أبي هريرة رضي الله عنه",
+            en: "Narrated by Muslim in his Sahih from the hadith of Abu Hurayrah (may Allah be pleased with him)",
+          },
+        },
+        {
+          kind: "note",
+          text: {
+            ar: "ولا شك أن النوم مما ينفع الإنسان",
+            en: "Sleep is undoubtedly among what benefits a person.",
+          },
+          source: {
+            ar: "",
+            en: "",
           },
         },
         {
@@ -144,12 +166,12 @@ export const sleepCategory: IntentionCategory = {
         {
           kind: "athar",
           text: {
-            ar: "أنامُ أوَّلَ اللَّيلِ، فأقومُ وقد قَضَيتُ جُزئي مِنَ النَّومِ، فأقرَأُ ما كَتَبَ اللهُ لي، فأحتَسِبُ نَومَتي كما أحتَسِبُ قَومَتي.",
-            en: "I sleep at the beginning of the night, then I rise having taken my share of sleep, and I recite what Allah has written for me. I hope for reward for my sleep just as I hope for reward for my standing in prayer.",
+            ar: "سأل أبو موسى الأشعري معاذ بن جبل: فكيفَ تَقرَأُ أنتَ يا مُعاذُ؟ فقال: أنامُ أوَّلَ اللَّيلِ، فأقومُ وقد قَضَيتُ جُزئي مِنَ النَّومِ، فأقرَأُ ما كَتَبَ اللهُ لي، فأحتَسِبُ نَومَتي كما أحتَسِبُ قَومَتي.",
+            en: "Abu Musa al-Ash‘ari asked Mu‘adh ibn Jabal: How do you recite, O Mu‘adh? He said: I sleep at the beginning of the night, then I rise having taken my share of sleep, and I recite what Allah has written for me. I hope for reward for my sleep just as I hope for reward for my standing in prayer.",
           },
           source: {
-            ar: "في الصحيح من حديث أبي موسى الأشعري أنه سأل معاذ بن جبل: فكيفَ تَقرَأُ أنتَ يا مُعاذُ؟",
-            en: "In the authentic collection, from the hadith of Abu Musa al-Ash‘ari who asked Mu‘adh ibn Jabal: How do you recite, O Mu‘adh?",
+            ar: "رواه البخاري في صحيحه من حديث أبي موسى الأشعري رضي الله عنه",
+            en: "Narrated by al-Bukhari in his Sahih from the hadith of Abu Musa al-Ash‘ari (may Allah be pleased with him)",
           },
         },
       ],

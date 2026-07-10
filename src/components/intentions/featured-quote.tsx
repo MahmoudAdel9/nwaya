@@ -18,7 +18,10 @@ function Quote({ attribution, text, locale, className }: QuoteProps) {
       )}
     >
       <figcaption className="text-primary mb-3 flex items-center gap-2 text-sm font-semibold tracking-[0.08em] md:text-base">
-        <QuoteIcon className="size-3.5 shrink-0 opacity-80" aria-hidden="true" />
+        <QuoteIcon
+          className="size-3.5 shrink-0 opacity-80"
+          aria-hidden="true"
+        />
         {attribution}
       </figcaption>
       <blockquote
@@ -26,7 +29,7 @@ function Quote({ attribution, text, locale, className }: QuoteProps) {
         className={
           locale === "ar"
             ? "text-foreground font-sans text-base leading-loose md:text-lg"
-            : "font-quote text-foreground text-base leading-relaxed italic md:text-lg"
+            : "font-quote text-foreground text-base leading-relaxed md:text-lg"
         }
       >
         <p>«{text}»</p>

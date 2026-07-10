@@ -37,8 +37,8 @@ export const gymCategory: IntentionCategory = {
             en: "The strong believer is better and more beloved to Allah than the weak believer, and in both there is good.",
           },
           source: {
-            ar: "قال النبي صلى الله عليه وسلم",
-            en: "The Prophet ﷺ said",
+            ar: "رواه مسلم في صحيحه من حديث أبي هريرة رضي الله عنه",
+            en: "Narrated by Muslim in his Sahih from the hadith of Abu Hurayrah (may Allah be pleased with him)",
           },
         },
       ],
@@ -57,8 +57,8 @@ export const gymCategory: IntentionCategory = {
             en: "Whoever is killed defending his wealth is a martyr, whoever is killed defending his life is a martyr, and whoever is killed defending his family is a martyr.",
           },
           source: {
-            ar: "قال النبي صلى الله عليه وسلم",
-            en: "The Prophet ﷺ said",
+            ar: "أخرجه أبو داود والنسائي وأحمد بلفظه من حديث سعيد بن زيد رضي الله عنه",
+            en: "Reported by Abu Dawud, an-Nasa’i, and Ahmad with this wording from the hadith of Sa‘id ibn Zayd (may Allah be pleased with him)",
           },
         },
       ],
@@ -77,8 +77,8 @@ export const gymCategory: IntentionCategory = {
             en: "I love to adorn myself for my wife just as I love that she adorn herself for me, because Allah says: And due to them [wives] is similar to what is expected of them, according to what is reasonable.",
           },
           source: {
-            ar: "قال ابن عباس رضي الله عنهما",
-            en: "Ibn Abbas (may Allah be pleased with them) said",
+            ar: "رواه البيهقي في السنن الكبرى وابن أبي شيبة في مصنفه عن ابن عباس رضي الله عنهما",
+            en: "Narrated by al-Bayhaqi in al-Sunan al-Kubra and Ibn Abi Shaybah in his Musannaf from the athar of Ibn Abbas (may Allah be pleased with them)",
           },
         },
       ],

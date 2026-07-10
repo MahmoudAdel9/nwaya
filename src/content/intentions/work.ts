@@ -34,8 +34,19 @@ export const workCategory: IntentionCategory = {
                 en: "That one of you should gather a bundle of firewood on his back is better for him than asking someone who may give him or refuse him.",
               },
               source: {
-                ar: "في الصحيح من حديث أبي هريرة رضي الله عنه. قال العيني رحمه الله في عمدة القاري: وفيه التحريض على الأكل من عمل يده، والاكتساب من المباحات.",
-                en: "In the authentic collection, from the hadith of Abu Hurayrah (may Allah be pleased with him). Al-‘Ayni (may Allah have mercy on him) said in ‘Umdat al-Qari: It contains encouragement to eat from the work of one’s hands and to earn from what is permissible.",
+                ar: "رواه البخاري في صحيحه من حديث أبي هريرة رضي الله عنه",
+                en: "Narrated by al-Bukhari in his Sahih from the hadith of Abu Hurayrah (may Allah be pleased with him)",
+              },
+            },
+            {
+              kind: "scholar",
+              text: {
+                ar: "وفيه التحريض على الأكل من عمل يده، والاكتساب من المباحات.",
+                en: "It contains encouragement to eat from the work of one’s hands and to earn from what is permissible.",
+              },
+              source: {
+                ar: "عمدة القاري للعيني",
+                en: "‘Umdat al-Qari by al-‘Ayni",
               },
             },
           ],
@@ -54,8 +65,8 @@ export const workCategory: IntentionCategory = {
                 en: "O people, fear Allah and seek provision in a fine manner, for a soul will not die until it has received its provision in full, even if it is delayed. So fear Allah and seek in a fine manner: take what is lawful and leave what is forbidden.",
               },
               source: {
-                ar: "عند ابن ماجة من حديث جابر بن عبدالله رضي الله عنه",
-                en: "In Ibn Majah, from the hadith of Jabir ibn Abdullah (may Allah be pleased with them)",
+                ar: "رواه ابن ماجه في سننه من حديث جابر بن عبدالله رضي الله عنه",
+                en: "Narrated by Ibn Majah in his Sunan from the hadith of Jabir ibn Abdullah (may Allah be pleased with them)",
               },
             },
           ],
@@ -74,8 +85,8 @@ export const workCategory: IntentionCategory = {
                 en: "No one has ever eaten food better than that which he eats from the work of his hands. And the Prophet of Allah Dawud (peace be upon him) used to eat from the work of his hands.",
               },
               source: {
-                ar: "في صحيح البخاري عن المقدام رضي الله عنه",
-                en: "In Sahih al-Bukhari, from al-Miqdam (may Allah be pleased with him)",
+                ar: "رواه البخاري في صحيحه من حديث المقدام رضي الله عنه",
+                en: "Narrated by al-Bukhari in his Sahih from the hadith of al-Miqdam (may Allah be pleased with him)",
               },
             },
           ],
@@ -94,8 +105,8 @@ export const workCategory: IntentionCategory = {
                 en: "The purest of what a man eats is from his own earning…",
               },
               source: {
-                ar: "روي النسائي وأبو داود والترمذي عن أم المؤمنين عائشة رضي الله عنها",
-                en: "Narrated by an-Nasa’i, Abu Dawud, and at-Tirmidhi from the Mother of the Believers Aishah (may Allah be pleased with her)",
+                ar: "رواه النسائي وأبو داود والترمذي من حديث عائشة رضي الله عنها",
+                en: "Narrated by an-Nasa’i, Abu Dawud, and at-Tirmidhi from the hadith of Aishah (may Allah be pleased with her)",
               },
             },
           ],
@@ -116,7 +127,7 @@ export const workCategory: IntentionCategory = {
             en: "This world is only for four kinds of people: a servant whom Allah has given wealth and knowledge, so he fears his Lord regarding his wealth, upholds kinship with it, and knows Allah’s right in it — this one is in the best rank with Allah…",
           },
           source: {
-            ar: "روى أحمد والترمذي من حديث أبي كبشة الأنماري رضي الله عنه",
+            ar: "رواه أحمد والترمذي من حديث أبي كبشة الأنماري رضي الله عنه",
             en: "Narrated by Ahmad and at-Tirmidhi from the hadith of Abu Kabshah al-Anmari (may Allah be pleased with him)",
           },
         },
@@ -144,8 +155,8 @@ export const workCategory: IntentionCategory = {
                 en: "It is enough sin for a person that he neglects those whom he is responsible to feed.",
               },
               source: {
-                ar: "في مسند أحمد عن جابر رضي الله عنه",
-                en: "In Musnad Ahmad, from Jabir (may Allah be pleased with him)",
+                ar: "رواه أحمد في مسنده من حديث جابر رضي الله عنه",
+                en: "Narrated by Ahmad in his Musnad from the hadith of Jabir (may Allah be pleased with him)",
               },
             },
           ],
@@ -158,14 +169,14 @@ export const workCategory: IntentionCategory = {
           },
           evidences: [
             {
-              kind: "scholar",
+              kind: "athar",
               text: {
-                ar: "إِذَا كَانَ يَجِبُ عَلَيْهِ أَنْ يُعِفَّهُمْ فَمِنَ النِّيَّةِ صِيَانَتُهُمْ",
-                en: "If he is obligated to protect their chastity and needs, then safeguarding them is part of intention.",
+                ar: "قال المروذي لأحمد بن حنبل: إن رجلاً قال: لا أكسب حتى تصح لي النية، وله عيال، فقال أحمد: إِذَا كَانَ يَجِبُ عَلَيْهِ أَنْ يُعِفَّهُمْ فَمِنَ النِّيَّةِ صِيَانَتُهُمْ",
+                en: "Al-Marwadhi said to Ahmad ibn Hanbal: A man said, ‘I will not earn until my intention is sound,’ and he had dependents. Ahmad replied: If he is obligated to protect their chastity and needs, then safeguarding them is part of intention.",
               },
               source: {
-                ar: "قال المروذي لأحمد بن حنبل: إن رجلاً قال: لا أكسب حتى تصح لي النية، وله عيال، قال أحمد ذلك",
-                en: "Al-Marwadhi said to Ahmad ibn Hanbal: A man said, ‘I will not earn until my intention is sound,’ and he had dependents. Ahmad replied with this.",
+                ar: "كتاب الحث على التجارة للخلال",
+                en: "Kitab al-Hathth ‘ala al-Tijarah by al-Khallal",
               },
             },
           ],
@@ -194,8 +205,19 @@ export const workCategory: IntentionCategory = {
                 en: "There is no envy except in two: a man whom Allah has given wealth and empowered to spend it in what is right…",
               },
               source: {
-                ar: "في الصحيح من حديث عبدالله بن مسعود رضي الله عنه، فتنوي أن تكون منهم",
-                en: "In the authentic collection, from the hadith of Abdullah ibn Mas‘ud (may Allah be pleased with him). Intend to be among them.",
+                ar: "رواه البخاري في صحيحه من حديث عبدالله بن مسعود رضي الله عنه",
+                en: "Narrated by al-Bukhari in his Sahih from the hadith of Abdullah ibn Mas‘ud (may Allah be pleased with him)",
+              },
+            },
+            {
+              kind: "note",
+              text: {
+                ar: "فتنوي أن تكون منهم",
+                en: "Intend to be among them.",
+              },
+              source: {
+                ar: "",
+                en: "",
               },
             },
           ],
@@ -214,8 +236,8 @@ export const workCategory: IntentionCategory = {
                 en: "How excellent is righteous wealth for a righteous person.",
               },
               source: {
-                ar: "روى البخاري في الأدب المفرد عن عمرو بن العاص رضي الله عنه",
-                en: "Narrated by al-Bukhari in al-Adab al-Mufrad from Amr ibn al-As (may Allah be pleased with him)",
+                ar: "رواه البخاري في الأدب المفرد من حديث عمرو بن العاص رضي الله عنه",
+                en: "Narrated by al-Bukhari in al-Adab al-Mufrad from the hadith of Amr ibn al-As (may Allah be pleased with him)",
               },
             },
           ],
@@ -228,47 +250,47 @@ export const workCategory: IntentionCategory = {
           },
           evidences: [
             {
-              kind: "scholar",
+              kind: "athar",
               text: {
-                ar: "كانوا يرون السعة عونًا على الدين",
-                en: "They used to regard ease of means as an aid to the religion.",
+                ar: "قال أبو إسحاق السبيعي: كانوا يرون السعة عونًا على الدين",
+                en: "Abu Ishaq as-Sabi‘i said: They used to regard ease of means as an aid to the religion.",
               },
               source: {
-                ar: "قال أبو إسحاق السبيعي",
-                en: "Abu Ishaq as-Sabi‘i said",
+                ar: "رواه أحمد في العلل ومعرفة الرجال",
+                en: "Narrated by Ahmad in al-‘Ilal wa Ma‘rifat al-Rijal",
               },
             },
             {
-              kind: "scholar",
+              kind: "athar",
               text: {
-                ar: "نعم العون على التقوى الغنى",
-                en: "How excellent an aid to piety is wealth.",
+                ar: "قال محمد بن المنكدر: نعم العون على التقوى الغنى",
+                en: "Muhammad ibn al-Munkadir said: How excellent an aid to piety is wealth.",
               },
               source: {
-                ar: "قال محمد بن المنكدر",
-                en: "Muhammad ibn al-Munkadir said",
+                ar: "رواه البغوي في مسند ابن الجعد",
+                en: "Narrated by al-Baghawi in Musnad Ibn al-Ja‘d",
               },
             },
             {
-              kind: "scholar",
+              kind: "athar",
               text: {
-                ar: "المال في زماننا هذا سلاح المؤمن",
-                en: "Wealth in our time is the weapon of the believer.",
+                ar: "قال سفيان الثوري: المال في زماننا هذا سلاح المؤمن",
+                en: "Sufyan ath-Thawri said: Wealth in our time is the weapon of the believer.",
               },
               source: {
-                ar: "قال سفيان الثوري",
-                en: "Sufyan ath-Thawri said",
+                ar: "رواه ابن أبي الدنيا في إصلاح المال",
+                en: "Narrated by Ibn Abi al-Dunya in Islah al-Mal",
               },
             },
             {
-              kind: "scholar",
+              kind: "athar",
               text: {
-                ar: "لا خير فيمن لا يطلب المال فيقي به دينه، ويصون به عرضه، ويقضي به ذمامه، وإن مات تركه ميراثًا لمن بعده",
-                en: "There is no good in one who does not seek wealth to protect his religion with it, safeguard his honor with it, fulfill his obligations with it, and if he dies leave it as inheritance for those after him.",
+                ar: "قال سعيد بن المسيب: لا خير فيمن لا يطلب المال فيقي به دينه، ويصون به عرضه، ويقضي به ذمامه، وإن مات تركه ميراثًا لمن بعده",
+                en: "Sa‘id ibn al-Musayyib said: There is no good in one who does not seek wealth to protect his religion with it, safeguard his honor with it, fulfill his obligations with it, and if he dies leave it as inheritance for those after him.",
               },
               source: {
-                ar: "قال سعيد بن المسيب",
-                en: "Sa‘id ibn al-Musayyib said",
+                ar: "رواه ابن أبي الدنيا في إصلاح المال",
+                en: "Narrated by Ibn Abi al-Dunya in Islah al-Mal",
               },
             },
           ],
@@ -289,8 +311,8 @@ export const workCategory: IntentionCategory = {
             en: "That you leave your heirs wealthy is better than leaving them dependent, begging from people. And you will not spend any spending seeking Allah’s Face except that you are rewarded for it — even what you put in your wife’s mouth.",
           },
           source: {
-            ar: "في الصحيح من حديث سعد بن أبي وقاص رضي الله عنه",
-            en: "In the authentic collection, from the hadith of Sa‘d ibn Abi Waqqas (may Allah be pleased with him)",
+            ar: "رواه البخاري في صحيحه من حديث سعد بن أبي وقاص رضي الله عنه",
+            en: "Narrated by al-Bukhari in his Sahih from the hadith of Sa‘d ibn Abi Waqqas (may Allah be pleased with him)",
           },
         },
       ],
@@ -305,12 +327,12 @@ export const workCategory: IntentionCategory = {
         {
           kind: "athar",
           text: {
-            ar: "اطْلُبُوا مِنْ فَضْلِ اللَّهِ، وَلَا تَكُونُوا عِيَالًا عَلَى الْمُسْلِمِينَ",
-            en: "Seek from the bounty of Allah, and do not be dependents upon the Muslims.",
+            ar: "كان سفيان الثوري يمر بنا ونحن جلوس في المسجد الحرام فيقول: ما يجلسكم؟ فنقول: فما نصنع؟ فيقول: اطْلُبُوا مِنْ فَضْلِ اللَّهِ، وَلَا تَكُونُوا عِيَالًا عَلَى الْمُسْلِمِينَ",
+            en: "Sufyan ath-Thawri would pass by us while we sat in the Sacred Mosque and say, ‘What keeps you sitting?’ We would say, ‘What should we do?’ He would say: Seek from the bounty of Allah, and do not be dependents upon the Muslims.",
           },
           source: {
-            ar: "عن محمد بن ثور قال: كان سفيان الثوري يمر بنا ونحن جلوس في المسجد الحرام فيقول: ما يجلسكم؟ فنقول: فما نصنع؟ قال ذلك",
-            en: "From Muhammad ibn Thawr: Sufyan ath-Thawri would pass by us while we sat in the Sacred Mosque and say, ‘What keeps you sitting?’ We would say, ‘What should we do?’ He said this.",
+            ar: "عن محمد بن ثور عن سفيان الثوري رحمه الله",
+            en: "From Muhammad ibn Thawr, from Sufyan ath-Thawri (may Allah have mercy on him)",
           },
         },
       ],

@@ -2,7 +2,7 @@ export type LocaleCode = "ar" | "en";
 
 export type LocaleString = Record<LocaleCode, string>;
 
-export type EvidenceKind = "quran" | "hadith" | "athar" | "scholar";
+export type EvidenceKind = "quran" | "hadith" | "athar" | "scholar" | "note";
 
 export type Evidence = {
   kind: EvidenceKind;

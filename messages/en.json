@@ -38,7 +38,8 @@
       "quran": "Quran",
       "hadith": "Sunnah",
       "athar": "Narration",
-      "scholar": "Scholar's Statement"
+      "scholar": "Scholar's Statement",
+      "note": "Note"
     }
   },
   "Footer": {

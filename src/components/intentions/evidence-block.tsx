@@ -28,6 +28,11 @@ const kindStyles: Record<
     label: "text-foreground/75",
     surface: "border-border/50 bg-muted/30",
   },
+  note: {
+    accent: "border-s-border",
+    label: "text-foreground/75",
+    surface: "border-border/50 bg-muted/30",
+  },
 };
 
 type EvidenceBlockProps = {
@@ -55,7 +60,11 @@ export async function EvidenceBlock({ evidence, locale }: EvidenceBlockProps) {
           styles.label,
         )}
       >
-        <Icon className="size-3.5 shrink-0" strokeWidth={2} aria-hidden="true" />
+        <Icon
+          className="size-3.5 shrink-0"
+          strokeWidth={2}
+          aria-hidden="true"
+        />
         {label}
       </figcaption>
       <blockquote
@@ -63,16 +72,18 @@ export async function EvidenceBlock({ evidence, locale }: EvidenceBlockProps) {
         className={
           locale === "ar"
             ? "text-foreground font-sans text-base leading-loose md:text-lg"
-            : "font-quote text-foreground text-base leading-relaxed italic md:text-lg"
+            : "font-quote text-foreground text-base leading-relaxed md:text-lg"
         }
       >
         <p>«{localize(evidence.text, locale)}»</p>
       </blockquote>
-      <footer className="border-border/35 mt-4 border-t pt-3">
-        <p className="text-foreground/80 text-sm leading-relaxed">
-          {localize(evidence.source, locale)}
-        </p>
-      </footer>
+      {localize(evidence.source, locale) ? (
+        <footer className="border-border/35 mt-4 border-t pt-3">
+          <p className="text-foreground/80 text-sm leading-relaxed">
+            {localize(evidence.source, locale)}
+          </p>
+        </footer>
+      ) : null}
     </figure>
   );
 }
