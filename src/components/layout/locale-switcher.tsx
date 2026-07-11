@@ -12,7 +12,8 @@ export function LocaleSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const nextLocale: Locale = locale === "ar" ? "en" : "ar";
+  // English temporarily disabled — restore when "en" is back in routing.locales
+  const nextLocale = (locale === "ar" ? "en" : "ar") as Locale;
   const label = nextLocale === "ar" ? "العربية" : "English";
 
   function switchLocale() {

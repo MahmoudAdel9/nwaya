@@ -3,7 +3,7 @@
 import { HomeIcon, MenuIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
-import { LocaleSwitcher } from "@/components/layout/locale-switcher";
+// import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Button } from "@/components/ui/button";
 import {
